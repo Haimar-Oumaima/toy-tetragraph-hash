@@ -1,0 +1,59 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Toy Tetragraph Hash - By: Nathan Dentzau</title>
+		<style type="text/css">
+		<!--
+			body {
+				font-family: "Arial", sans-serif;
+			}
+
+			textarea {
+				height: 150px;
+				width: 300px;
+			}
+
+			button {
+				font-size: 18px;
+			}
+
+			#result {
+				color: red;
+				font-weight: bold;
+			}
+		-->
+		</style>
+	</head>
+
+	<body>
+		<h1>Toy Tetragraph Hash</h1>
+
+		<p id="result"></p>
+
+		<p>
+			<textarea id="message"></textarea>
+		</p>
+		<p>
+			<button id="submit">Hash Your Message!</button>
+		</p>
+
+		<p>
+			&copy; 2015 Nathan Dentzau.
+		</p>
+
+		<script src="tth.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		<!--
+			document.getElementById("submit").addEventListener("click", function() {
+				var message = document.getElementById("message").value;
+
+				if (message === "") {
+					return;
+				}
+
+				document.getElementById("result").innerHTML = "Hash: " + tth(message);
+			});
+		-->
+		</script>
+	</body>
+</html>
